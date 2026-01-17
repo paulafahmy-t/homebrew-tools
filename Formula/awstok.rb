@@ -7,7 +7,7 @@ class Awstok < Formula
   homepage "https://github.com/paulafahmy-t/awstok"
   
   url "https://github.com/paulafahmy-t/awstok/archive/refs/tags/v1.0.1.tar.gz"
-  version "1.0.0"
+  version "1.0.1"
   sha256 "053e8cecc9c958d97b73c4fe0ffbc611b8b317a37ac262b678703deb52a63dcd"
 
   # Formula dependencies

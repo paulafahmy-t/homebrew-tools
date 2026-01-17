@@ -6,9 +6,9 @@ class Awstok < Formula
   desc "A tool to manage AWS CodeArtifact tokens for NuGet"
   homepage "https://github.com/paulafahmy-t/awstok"
   
-  url "https://github.com/paulafahmy-t/awstok/archive/refs/tags/v1.0.0.tar.gz"
+  url "https://github.com/paulafahmy-t/awstok/archive/refs/tags/v1.0.1.tar.gz"
   version "1.0.0"
-  sha256 "f5a869b856748fc6441d49fc80ef2f5c4c3f608a7d19d527c59af0af0d38b328"
+  sha256 "053e8cecc9c958d97b73c4fe0ffbc611b8b317a37ac262b678703deb52a63dcd"
 
   # Formula dependencies
   depends_on "awscli"
@@ -23,7 +23,7 @@ class Awstok < Formula
   end
 
   service do
-    run [opt_bin/"awstok", "refresh"]
+    run [opt_bin/"awstok", "check"]
     run_type :cron
     cron "30 9 * * *"
     log_path var/"log/awstok.log"
